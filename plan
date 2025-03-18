@@ -1,0 +1,75 @@
+Kế hoạch xây dựng trang web trên GitHub với ba trò chơi: Cờ tướng, Caro, Cờ vua
+1. Mục tiêu
+Tạo một trang web đơn giản, thân thiện với người dùng, cho phép chơi ba trò chơi: cờ tướng, caro, cờ vua.
+
+Triển khai trên GitHub Pages để dễ dàng truy cập và chia sẻ.
+
+2. Công nghệ sử dụng
+Frontend: HTML, CSS, JavaScript (thư viện như Chess.js cho cờ vua, hoặc tự viết logic cho caro và cờ tướng).
+
+Hosting: GitHub Pages.
+
+Công cụ hỗ trợ: Visual Studio Code (hoặc bất kỳ trình soạn thảo nào), Git.
+
+3. Cấu trúc dự án
+index.html: Trang chính hiển thị giao diện chính với ba nút chọn trò chơi.
+
+styles.css: File định dạng giao diện (màu sắc, bố cục, responsive).
+
+scripts/:
+chess.js: Logic cho cờ vua.
+
+caro.js: Logic cho caro.
+
+xiangqi.js: Logic cho cờ tướng.
+
+assets/: Chứa hình ảnh (bàn cờ, quân cờ) và các tài nguyên khác.
+
+4. Các bước thực hiện
+Thiết kế giao diện:
+Tạo một trang chủ với tiêu đề "Trò chơi bàn cờ" và ba nút: "Cờ vua", "Caro", "Cờ tướng".
+
+Mỗi nút dẫn đến khu vực chơi tương ứng (có thể dùng div ẩn/hiện).
+
+Xây dựng logic trò chơi:
+Cờ vua: Sử dụng thư viện Chess.js để xử lý luật chơi và hiển thị bàn cờ.
+
+Caro: Viết logic đơn giản với lưới 15x15, kiểm tra thắng/thua (5 ô liên tiếp).
+
+Cờ tướng: Tự viết hoặc dùng thư viện có sẵn (như Xiangqi.js), xử lý nước đi và luật cơ bản.
+
+Tích hợp tính năng:
+Chơi với máy (AI đơn giản dùng thuật toán Minimax nếu có thời gian).
+
+Chơi hai người (trên cùng thiết bị).
+
+Nút "Chơi lại" để reset bàn cờ.
+
+Kiểm tra và tối ưu:
+Đảm bảo giao diện responsive (chạy tốt trên cả PC và mobile).
+
+Kiểm tra lỗi logic (nước đi không hợp lệ, tính thắng/thua).
+
+Triển khai lên GitHub:
+Tạo repository trên GitHub (ví dụ: BoardGames).
+
+Push code lên nhánh main.
+
+Kích hoạt GitHub Pages trong phần Settings, chọn nhánh main và thư mục gốc (/root).
+
+5. Lịch trình (ước lượng)
+Ngày 1: Thiết kế giao diện cơ bản (HTML + CSS).
+
+Ngày 2: Xây dựng logic cho Caro.
+
+Ngày 3: Xây dựng logic cho Cờ vua.
+
+Ngày 4: Xây dựng logic cho Cờ tướng.
+
+Ngày 5: Tối ưu, kiểm tra và triển khai lên GitHub Pages.
+
+6. Kết quả mong đợi
+Trang web chạy mượt mà trên GitHub Pages (ví dụ: https://username.github.io/BoardGames).
+
+Người dùng có thể chọn và chơi ba trò chơi một cách dễ dàng.
+
