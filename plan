@@ -1,6 +1,6 @@
 Kế hoạch xây dựng trang web trên GitHub với ba trò chơi: Cờ tướng, Caro, Cờ vua
 1. Mục tiêu
-Tạo một trang web đơn giản, thân thiện với người dùng, cho phép chơi ba trò chơi: cờ tướng, caro, cờ vua.
+Tạo một trang web đơn giản, thân thiện với người dùng, cho phép chơi trò chơi: cờ tướng,cờ úp, caro, cờ vua.
 
 Triển khai trên GitHub Pages để dễ dàng truy cập và chia sẻ.
 
@@ -22,12 +22,13 @@ chess.js: Logic cho cờ vua.
 caro.js: Logic cho caro.
 
 xiangqi.js: Logic cho cờ tướng.
+xiangqi.js: Logic cho cờ úp.
 
 assets/: Chứa hình ảnh (bàn cờ, quân cờ) và các tài nguyên khác.
 
 4. Các bước thực hiện
 Thiết kế giao diện:
-Tạo một trang chủ với tiêu đề "Trò chơi bàn cờ" và ba nút: "Cờ vua", "Caro", "Cờ tướng".
+Tạo một trang chủ với tiêu đề "All kinds of chess" và bốn nút: "Cờ vua", "Caro", "Cờ tướng" , "Cờ úp".
 
 Mỗi nút dẫn đến khu vực chơi tương ứng (có thể dùng div ẩn/hiện).
 
@@ -37,6 +38,8 @@ Cờ vua: Sử dụng thư viện Chess.js để xử lý luật chơi và hiể
 Caro: Viết logic đơn giản với lưới 15x15, kiểm tra thắng/thua (5 ô liên tiếp).
 
 Cờ tướng: Tự viết hoặc dùng thư viện có sẵn (như Xiangqi.js), xử lý nước đi và luật cơ bản.
+Cờ úp: Tự viết hoặc dùng thư viện có sẵn (như Xiangqi.js), xử lý nước đi và luật cơ bản.
+
 
 Tích hợp tính năng:
 Chơi với máy (AI đơn giản dùng thuật toán Minimax nếu có thời gian).
